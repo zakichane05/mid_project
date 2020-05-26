@@ -3,6 +3,9 @@
 <html lang="en">
 
 <head>
+  <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -29,8 +32,8 @@
 </head>
 
 <body>
-
-    
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0&appId=580681865893888&autoLogAppEvents=1"></script>
     {% comment %}
     <title>{% block head_title %}{% endblock %}</title>
     {% block extra_head %}
